@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lec.spring.repository.PostRepository">
+
+    <insert id="save" flushCache="true" parameterType="com.lec.spring.domain.Post"
+        useGeneratedKeys="true" keyColumn="id" keyProperty="id"
+        >
+        INSERT INTO t4_post
+            (subject, content, user)    <!--컬럼안에 아래 value가 들어감-->
+        VALUES
+            (#{subject}, #{content}, #{user})   <!--domain에 들어온 애들 // #에 데이터가 들어감 -->
+    </insert>   <!--insert 쿼리를 실행 시키기 위해 insert태그 안에 쿼리를 넣는다.-->
+
+    <!-- 반복해서 사용될 쿼리문은 sql 태그로 정의 하고, include 태그로 가져다 쓸수 있다 -->
+    <sql id="SELECT_BASE">
+        SELECT
+            id "id",
+            subject "subject",  <!--왼쪽은 실제 컬럼 이름, 오른쪽은 별칭(데이타 베이스 맨 위에 뜨는거)-->
+            content "content",
+            viewcnt "viewCnt",
+            user "user",
+            regdate "regDate"
+        FROM
+            t4_post
+        WHERE
+            1=1
+    </sql>
+
+    <select id="findById" resultType="com.lec.spring.domain.Post">
+        <include refid="SELECT_BASE"/>    <!--<sql id="SELECT_BASE">안의 쿼리를 가져온다-->
+            AND id = #{id}
+    </select>   <!--애는 조회임 조회는 결과가 있어야함 그 결과를 resultType타입으로 알려준다(mybatise한테 알려 준다는 뜻) -->
+
+    <update id="incViewCnt" flushCache="true">    <!---->
+        UPDATE t4_post
+        SET viewcnt = viewcnt + 1
+        WHERE id = #{param1}
+    </update>
+
+
+    <select id="findAll" resultType="com.lec.spring.domain.Post">
+        <include refid="SELECT_BASE"/>
+        ORDER BY id DESC
+    </select>
+
+    <update id="update" flushCache="true"
+        parameterType="com.lec.spring.domain.Post">
+        UPDATE t4_post
+        SET subject = #{subject}, content = #{content}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" flushCache="true"
+        parameterType="com.lec.spring.domain.Post">
+        DELETE FROM t4_post WHERE id = #{id}
+    </delete>
+</mapper>
+
+
