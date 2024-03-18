@@ -9,10 +9,12 @@
 </ul>
 
 <h1>공허한 내용</h1>
-<li>참여도: 40%</li>⚙️데이터 요청 및 출력 : jQuery, Ajax</li>
-<li>반응형 웹 화면 구성 : HTML5, CSS3, BootStrap, JavaScript, jQuery, Summernote API</li>
-<li>결과를 얻어오기 위한 서버 액션 : JAVA, JSP</li>
-<li>⚙DB액션 처리 : MyBatis</li>
-<li><개발 Tool : IntelliJ IDEA Ultimate, Visual Studio Code, Apache Gradle</li>
-<li>협업 툴 : Git, Figma</li>
-<li>UX/UI : 사용자 편리를 위한 디자인 협업 툴(Figma)을 팀원들이게 제공 & 사용자 경험과 사용자 인터페이스 설계</li>
+<ul>
+  <li>참여도: 40%</li>⚙️데이터 요청 및 출력 : jQuery, Ajax</li>
+  <li>반응형 웹 화면 구성 : HTML5, CSS3, BootStrap, JavaScript, jQuery, Summernote API</li>
+  <li>결과를 얻어오기 위한 서버 액션 : JAVA, JSP</li>
+  <li>DB액션 처리 : MyBatis</li>
+  <li>개발 Tool : IntelliJ IDEA Ultimate, Visual Studio Code, Apache Gradle</li>
+  <li>협업 툴 : Git, Figma</li>
+  <li>UX/UI : 사용자 편리를 위한 디자인 협업 툴(Figma)을 팀원들이게 제공 & 사용자 경험과 사용자 인터페이스 설계</li>
+</ul>
