@@ -13,7 +13,7 @@
   <li>참여도: 40%</li>
   <li>데이터 요청 및 출력 : jQuery, Ajax</li>
   <li>웹 화면 구성 : HTML5, CSS3, BootStrap, JavaScript, jQuery, Summernote API</li>
-  <li>결과를 얻어오기 위한 서버 액션 : JAVA, JSP/li>
+  <li>결과를 얻어오기 위한 서버 액션 : JAVA, JSP</li>
   <li>DB액션 처리 : MyBatis</li>
   <li>개발 Tool : IntelliJ IDEA Ultimate, Visual Studio Code, Apache Gradle</li>
   <li>협업 툴 : Git, Figma</li>
