@@ -2,6 +2,7 @@
 
 <h1>프로젝트</h1>
 <p>[서울시 주거&문화정보 제공 서비스](https://github.com/Katie27-maker/INSeoulProject)</p>
+<p>[https://github.com/Katie27-maker/INSeoulProject](url)</p>
 
 <h1>개요</h1>
 <ul>
