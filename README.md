@@ -17,4 +17,5 @@
   <li>DB액션 처리 : MyBatis</li>
   <li>개발 Tool : IntelliJ IDEA Ultimate, Visual Studio Code, Apache Gradle</li>
   <li>협업 툴 : Git, Figma</li>
+  <li>UX/UI : 사용자 편리를 위한 디자인 툴 제공과, </li>
 </ul>
